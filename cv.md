@@ -88,7 +88,10 @@ I finished courses "Basic HTML, CSS" and "Basic JS" on htmlacademy.ru
 ## My English level
 
 >C1+
-![Test results](assets/test_english.JPG)
+
+<p>Test results
+	<img src="assets/test_english.JPG" alt="Test results" width="50%">
+</p>
 
 Have working experience on the cruise ship (Carnival Cruise Company).
 Since May 2021 till December 2021 lived in Albania (working language English).
