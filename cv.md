@@ -89,9 +89,8 @@ I finished courses "Basic HTML, CSS" and "Basic JS" on htmlacademy.ru
 
 >C1+
 
-<p>Test results
-	<img src="assets/test_english.JPG" alt="Test results" width="50%">
-</p>
+<p>Test results</p>
+<img src="assets/test_english.JPG" alt="Test results" width="50%">
 
 Have working experience on the cruise ship (Carnival Cruise Company).
 Since May 2021 till December 2021 lived in Albania (working language English).
