@@ -79,7 +79,7 @@ Had to leave because needed to move to another city.
 
 ## My education
 
-I graduated from Kemerovo State University (Russia) in 2007.
+I graduated from Kemerovo State University (Russia) in 2007 as a lawyer.
 
 I finished courses "Basic HTML, CSS" and "Basic JS" on htmlacademy.ru
 [Certificate Basic HTML, CSS](assets/cert_HTML.pdf)
@@ -88,7 +88,7 @@ I finished courses "Basic HTML, CSS" and "Basic JS" on htmlacademy.ru
 ## My English level
 
 >C1+
-[Test results](assets/test_english.JPG)
+![Test results](assets/test_english.JPG)
 
 Have working experience on the cruise ship (Carnival Cruise Company).
 Since May 2021 till December 2021 lived in Albania (working language English).
