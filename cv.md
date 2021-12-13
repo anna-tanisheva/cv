@@ -62,19 +62,29 @@ Had to leave because needed to move to another city.
 
 ## My Projects:
 [Landing for local brewing company, created for ashwood.by](https://github.com/anna-tanisheva/lidskoe)
+
+[Demo](https://anna-tanisheva.github.io/sites/lidskoe/main-page.html)
 >HTML, CSS, JS, TweenMax animation, PHP, Git
 
 [Landing for lense sellers, created for ashwood.by](https://github.com/anna-tanisheva/lenses)
+
+[Demo](https://anna-tanisheva.github.io/sites/lenses/index.html)
 >HTML, CSS, JS, JQuery, Git
 
 [Some examples of advertising banners, created for ashwood.by](https://github.com/anna-tanisheva/banners)
+
+[Demo](https://anna-tanisheva.github.io/banners/index.html)
 >HTML, CSS, TweenMax animation
 
 
 [Studying project for JS course on htmlacademy.ru](https://github.com/anna-tanisheva/keksobooking)
+
+[Demo](https://anna-tanisheva.github.io/sites/keksobooking/index.html)
 >HTML, CSS, JS
 
 [Studying project for HTML CSS course on htmlacademy.ru](https://github.com/anna-tanisheva/nerds)
+
+[Demo](https://anna-tanisheva.github.io/sites/nerds-master/index.html)
 >HTML, CSS
 
 ## My education
