@@ -20,3 +20,35 @@ I have short experience in **web-developing: 2017, half a year I was working for
 I had to leave that job because I needed to move to another city.
 
 I'm a reliable, tenacious and optimistic person. I easily find common ground with people and I'm used to work hard to achieve my goals. I like learning something new and I'm interested in web developing.
+
+## Technologies:
+HTML, CSS,
+
+Vanilla JS, JQuery,
+
+TweenMax animation,
+
+Git
+
+## My Code example (Codewars):
+>In this kata you are required to, given a string, replace every letter with its position in the alphabet.
+If anything in the text isn't a letter, ignore it and don't return it.
+"a" = 1, "b" = 2, etc.
+Example
+alphabetPosition("The sunset sets at twelve o' clock.")
+Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" (as a string)
+
+          function alphabetPosition(text) {
+            let newText = '';
+            text = text.toLowerCase();
+            for (i in text) {
+              if (text[i].charCodeAt() > 96 && text[i].charCodeAt() < 123) {
+                newText += text[i].charCodeAt()-96 + ' '
+              } else {
+                continue;
+              }
+            }
+            text = newText.trim();
+            return text;
+          }
+
