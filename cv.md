@@ -52,3 +52,43 @@ Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 1
             return text;
           }
 
+## My experience
+
+### March 2017 - September 2017
+
+"Ashwood Company" advertising and digital agency, Minsk.
+Web-developer. Job-description: creating animated web-banners, landings. Technologies: HTML, CSS, JS, JQuery, TweenMax animation, git.
+Had to leave because needed to move to another city.
+
+## My Projects:
+[Landing for local brewing company, created for ashwood.by](https://github.com/anna-tanisheva/lidskoe)
+>HTML, CSS, JS, TweenMax animation, PHP, Git
+
+[Landing for lense sellers, created for ashwood.by](https://github.com/anna-tanisheva/lenses)
+>HTML, CSS, JS, JQuery, Git
+
+[Some examples of advertising banners, created for ashwood.by](https://github.com/anna-tanisheva/banners)
+>HTML, CSS, TweenMax animation
+
+
+[Studying project for JS course on htmlacademy.ru](https://github.com/anna-tanisheva/keksobooking)
+>HTML, CSS, JS
+
+[Studying project for HTML CSS course on htmlacademy.ru](https://github.com/anna-tanisheva/nerds)
+>HTML, CSS
+
+## My education
+
+I graduated from Kemerovo State University (Russia) in 2007.
+
+I finished courses "Basic HTML, CSS" and "Basic JS" on htmlacademy.ru
+[Certificate Basic HTML, CSS](assets/cert_HTML.pdf)
+[Certificate Basic JS](assets/cert_JS.pdf)
+
+## My English level
+
+>C1+
+[Test results](assets/test_english.JPG)
+
+Have working experience on the cruise ship (Carnival Cruise Company).
+Since May 2021 till December 2021 lived in Albania (working language English).
