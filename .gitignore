@@ -1,0 +1,7 @@
+node_modules
+.stylelintrc
+linthtml
+package-lock.json
+package.json
+style.scss
+.vscode
