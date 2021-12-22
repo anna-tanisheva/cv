@@ -14,7 +14,7 @@
 </head>
 
 <body>
-	<a href="#header" class="top"><i class="fas fa-arrow-circle-up"></i></a>
+	<!-- <a href="#header" class="top"><i class="fas fa-arrow-circle-up"></i></a> -->
 	<div class="wrapper">
 		<header id="header" class="header">
 			<nav>
@@ -68,7 +68,7 @@
 						<li>
 							<div class="contact">
 								<i class="fab fa-skype"></i>
-								<a href="skype:eyeinthesky42?call">eyeinthesky42;</a>
+								<a href="skype:eyeinthesky42?call">eyeinthesky42</a>
 							</div>
 						</li>
 						<li>
@@ -82,7 +82,7 @@
 
 
 				</section>
-				<section id="skills" class="content technologies">
+				<section id="skills" class="technologies">
 					<h2>Technologies:</h2>
 					<ul>
 						<li>
@@ -133,7 +133,7 @@
 							company, created for ashwood.by</a>
 						<a href="https://anna-tanisheva.github.io/sites/lidskoe/main-page.html" class="demo"
 							target="_blank">Demo</a>
-						<p class="technologies">Used technologies: HTML, CSS, JS, TweenMax animation, PHP, Git</p>
+						<p class="used-technologies">Used technologies: HTML, CSS, JS, TweenMax animation, PHP, Git</p>
 					</div>
 
 					<div class="project">
@@ -143,7 +143,7 @@
 							for ashwood.by</a>
 						<a href="https://anna-tanisheva.github.io/sites/lenses/index.html" class="demo"
 							target="_blank">Demo</a>
-						<p>Used technologies: HTML, CSS, JS, JQuery, Git</p>
+						<p>Used used-technologies: HTML, CSS, JS, JQuery, Git</p>
 					</div>
 
 					<div class="project">
@@ -151,7 +151,7 @@
 							of advertising
 							banners, created for ashwood.by</a>
 						<a href="https://anna-tanisheva.github.io/banners/index.html" class="demo" target="_blank">Demo</a>
-						<p>Used technologies: HTML, CSS, TweenMax animation</p>
+						<p>Used used-technologies: HTML, CSS, TweenMax animation</p>
 					</div>
 
 					<div class="project">
@@ -160,7 +160,7 @@
 							course on htmlacademy.ru</a>
 						<a href="https://anna-tanisheva.github.io/sites/keksobooking/index.html" class="demo"
 							target="_blank">Demo</a>
-						<p>Used technologies: HTML, CSS, JS</p>
+						<p>Used used-technologies: HTML, CSS, JS</p>
 					</div>
 
 					<div class="project">
@@ -169,7 +169,7 @@
 							course on htmlacademy.ru</a>
 						<a href="https://anna-tanisheva.github.io/sites/nerds-master/index.html" class="demo"
 							target="_blank">Demo</a>
-						<p>Used technologies: HTML, CSS</p>
+						<p>Used used-technologies: HTML, CSS</p>
 					</div>
 				</div>
 			</section>
@@ -178,29 +178,28 @@
 			<section id="code" class="content code">
 				<h2>My code example (Codewars):</h2>
 				<div class="kata">
-					<a href="https://www.codewars.com/kata/546f922b54af40e1e90001da">Replace With Alphabet Position</a>
-					<p> In this kata you are required to, given a string, replace every letter with its position in the
-						alphabet.
-						If
-						anything in the text isn’t a letter, ignore it and don’t return it. “a” = 1, “b” = 2, etc. Example
-						alphabetPosition(“The sunset sets at twelve o’ clock.”) Should return “20 8 5 19 21 14 19 5 20 19 5 20
-						19
-						1
-						20 20 23 5 12 22 5 15 3 12 15 3 11” (as a string)</p>
+					<a href="https://www.codewars.com/kata/546f922b54af40e1e90001da" target="_blank">Get decimal part of the
+						given number</a>
+					<p> Write a function that returns only the decimal part of the given number.
+
+						You only have to handle valid numbers, not Infinity, NaN, or similar. Always return a positive decimal
+						part.
+
+					<p>Examples:</p>
+					<p>getDecimal(2.4) === 0.4</p>
+					<p>getDecimal(-0.2) === 0.2</p>
 				</div>
 				<pre class="code-example">
-	function alphabetPosition(text) {
-	  let newText = '';
-	  for (i in text) {
-	    if (text[i].charCodeAt() > 96 && text[i].charCodeAt() &lt; 123) {
-	      newText += text[i].charCodeAt()-96 + ' '
-	    } else {
-	      continue;
-	    }
-	  }
-	  text = newText.trim();
-	  return text;
-	}
+function alphabetPosition(text) {
+  function getDecimal(n){
+    let nToStr = String(n)
+    if (nToStr.indexOf('.') !== -1) {
+      let decimal = nToStr.split('.')[1]
+      return Number('0.' + decimal)
+    } else {
+      return 0;
+    }
+  }
 			</pre>
 			</section>
 
