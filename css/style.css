@@ -200,10 +200,17 @@ img {
 
 .tech-name {
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.tech-name span {
-  border-bottom: 1px solid #d4cfcf;
+.tech-name .tech-stack {
+  font-weight: 400;
 }
 
 .summary {
@@ -341,15 +348,23 @@ img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .lvl-wrapper img {
-  width: 71%;
+  width: 100%;
 }
 
 .lvl {
   padding-top: 0.4rem;
   font-size: 3rem;
+}
+
+.img-rs {
+  width: 100%;
 }
 
 @media (min-width: 950px) and (max-width: 1140px) {
