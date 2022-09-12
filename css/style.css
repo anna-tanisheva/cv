@@ -8,6 +8,12 @@ body {
   scroll-behavior: smooth;
 }
 
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -23,7 +29,10 @@ body {
   margin: 0 auto;
 }
 
-ul, h1, h2, p {
+ul,
+h1,
+h2,
+p {
   margin: 0;
   padding: 0;
 }
@@ -36,8 +45,8 @@ a {
   color: #176b4f;
   text-decoration: none;
   font-weight: 600;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 a:hover {
@@ -49,10 +58,6 @@ section h2 {
   margin-bottom: 20px;
 }
 
-img {
-  width: 200px;
-}
-
 .top {
   position: fixed;
   bottom: 1rem;
@@ -60,7 +65,8 @@ img {
   font-size: 2.8rem;
 }
 
-.header, .footer {
+.header,
+.footer {
   height: 90px;
   padding: 1rem;
   background: -webkit-gradient(linear, left top, left bottom, from(#82b9ac), to(#37806d));
@@ -85,8 +91,8 @@ img {
 .header nav ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   height: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -101,8 +107,8 @@ img {
   color: #3c4042;
   text-transform: uppercase;
   font-weight: 500;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 .header nav ul li a :hover {
@@ -139,7 +145,7 @@ img {
   display: grid;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: ". main-header ." "sidebar summary summary" "sidebar experience experience" "code code code" "education-wrapper education-wrapper education-wrapper";
+      grid-template-areas: '. main-header .' 'sidebar summary summary' 'sidebar experience experience' 'code code code' 'education-wrapper education-wrapper education-wrapper';
   background: #f7f7f7;
 }
 
@@ -193,9 +199,26 @@ img {
   font-size: 1.5rem;
 }
 
+.codewars {
+  width: 21px;
+  height: 24px;
+  background-image: url("../assets/codewars-svgrepo-com.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  -webkit-filter: invert(28%) sepia(2%) saturate(1429%) hue-rotate(314deg) brightness(84%) contrast(87%);
+          filter: invert(28%) sepia(2%) saturate(1429%) hue-rotate(314deg) brightness(84%) contrast(87%);
+}
+
 .photo {
   width: 100%;
   margin-bottom: 20px;
+}
+
+.bar-container {
+  margin: 20px;
+  width: 400px;
+  height: 8px;
+  position: relative;
 }
 
 .tech-name {
@@ -263,41 +286,6 @@ img {
       justify-self: center;
 }
 
-.code {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-area: code;
-}
-
-.code h2 {
-  width: 22.5rem;
-  margin: 0 auto;
-  margin-bottom: 20px;
-}
-
-.code-example {
-  display: block;
-  width: 688px;
-  padding: 1rem;
-  margin: 0 auto;
-  font-size: 0.9rem;
-  background: #e7ebed;
-}
-
-.kata {
-  padding: 1rem;
-}
-
-.kata a {
-  display: block;
-  width: 50%;
-  margin: 0 auto;
-  font-size: 1.4rem;
-  margin-bottom: 14px;
-  text-align: center;
-}
-
 .education-wrapper {
   -ms-grid-row: 5;
   -ms-grid-column: 1;
@@ -305,21 +293,59 @@ img {
   grid-area: education-wrapper;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: "education english";
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 100px, (1fr)[5];
+      grid-template-rows: 100px, repeat(5, 1fr);
+  padding: 0;
+  margin: 0;
   margin-bottom: 15px;
+  gap: 10px;
+}
+
+.courses {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0 20px;
+}
+
+.education-header {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .education {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: education;
   border-right: 1px solid #d4cfcf;
+  padding: 0 10px;
+  margin: 0;
 }
 
 .education p {
   margin-bottom: 10px;
+}
+
+.education-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.education-item .stage-0-certificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .certificates {
@@ -331,10 +357,19 @@ img {
           justify-content: space-evenly;
 }
 
+.certificates a {
+  width: 40%;
+}
+
+.certificates img {
+  width: 100%;
+}
+
 .english {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: english;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
+  padding: 0 20px;
 }
 
 .english p {
@@ -364,7 +399,7 @@ img {
 }
 
 .img-rs {
-  width: 100%;
+  width: 50%;
 }
 
 @media (min-width: 950px) and (max-width: 1140px) {
@@ -372,7 +407,7 @@ img {
     width: 100%;
   }
   .main-content {
-        grid-template-areas: "main-header main-header main-header" "sidebar sidebar sidebar" "summary summary summary" "experience experience experience" "code code code" "education-wrapper education-wrapper education-wrapper";
+        grid-template-areas: 'main-header main-header main-header' 'sidebar sidebar sidebar' 'summary summary summary' 'experience experience experience' 'education-wrapper education-wrapper education-wrapper';
   }
   .sidebar {
     display: -ms-grid;
@@ -391,14 +426,14 @@ img {
     width: 100%;
   }
   .main-content {
-        grid-template-areas: "main-header main-header main-header" "sidebar sidebar sidebar" "summary summary summary" "experience experience experience" "code code code" "education-wrapper education-wrapper education-wrapper";
+        grid-template-areas: 'main-header main-header main-header' 'sidebar sidebar sidebar' 'summary summary summary' 'experience experience experience' 'education-wrapper education-wrapper education-wrapper';
   }
   .sidebar {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 1fr 2fr;
         grid-template-columns: 1fr 2fr;
-        grid-template-areas: "photo technologies" "contacts contacts";
+        grid-template-areas: 'photo technologies' 'contacts contacts';
   }
   .photo {
     -ms-grid-row: 1;
@@ -418,10 +453,28 @@ img {
     grid-area: technologies;
   }
   .education-wrapper {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-        grid-template-areas: "education" "english";
+    -ms-grid-columns: (1fr)[12];
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-areas: 'education' 'english';
     margin-bottom: 15px;
+  }
+  .courses {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .english {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1 / 13;
+  }
+  .certificates a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .certificates a img {
     width: 50%;
@@ -433,8 +486,8 @@ img {
     font-size: 1.5rem;
   }
   .header nav ul {
-    -ms-grid-columns: (1fr)[4];
-        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
   }
   .code-example {
     width: 100%;
@@ -452,12 +505,22 @@ img {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .project a, .project p {
+  .project a,
+  .project p {
     -ms-grid-column-align: center;
         justify-self: center;
     text-align: center;
   }
   .code-example {
     font-size: 0.7rem;
+  }
+}
+
+@media (min-width: 496px) and (max-width: 664px) {
+  .header nav ul {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
   }
 }
