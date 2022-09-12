@@ -58,10 +58,6 @@ section h2 {
   margin-bottom: 20px;
 }
 
-img {
-  width: 200px;
-}
-
 .top {
   position: fixed;
   bottom: 1rem;
@@ -95,8 +91,8 @@ img {
 .header nav ul {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[8];
-      grid-template-columns: repeat(8, 1fr);
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
   height: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -297,21 +293,59 @@ img {
   grid-area: education-wrapper;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-      grid-template-areas: 'education english';
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  -ms-grid-rows: 100px, (1fr)[5];
+      grid-template-rows: 100px, repeat(5, 1fr);
+  padding: 0;
+  margin: 0;
   margin-bottom: 15px;
+  gap: 10px;
+}
+
+.courses {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1 / 2;
+  padding: 0 20px;
+}
+
+.education-header {
+  -ms-grid-column-align: center;
+      justify-self: center;
 }
 
 .education {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: education;
   border-right: 1px solid #d4cfcf;
+  padding: 0 10px;
+  margin: 0;
 }
 
 .education p {
   margin-bottom: 10px;
+}
+
+.education-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.education-item .stage-0-certificate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .certificates {
@@ -323,10 +357,19 @@ img {
           justify-content: space-evenly;
 }
 
+.certificates a {
+  width: 40%;
+}
+
+.certificates img {
+  width: 100%;
+}
+
 .english {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: english;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
+  padding: 0 20px;
 }
 
 .english p {
@@ -356,7 +399,7 @@ img {
 }
 
 .img-rs {
-  width: 100%;
+  width: 50%;
 }
 
 @media (min-width: 950px) and (max-width: 1140px) {
