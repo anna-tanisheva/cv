@@ -14,7 +14,6 @@
 </head>
 
 <body>
-	<!-- <a href="#header" class="top"><i class="fas fa-arrow-circle-up"></i></a> -->
 	<div class="wrapper">
 		<header id="header" class="header">
 			<nav>
@@ -46,7 +45,6 @@
 				</ul>
 			</nav>
 		</header>
-
 		<main class="main-content">
 			<h1 class="content main-header">Anna Tanisheva</h1>
 			<aside class="sidebar">
@@ -84,10 +82,13 @@
 								<a href="https://www.linkedin.com/in/anna-tanisheva-a6321a244/" target="_blank">linkedin</a>
 							</div>
 						</li>
+						<li>
+							<div class="contact">
+								<i class="codewars"></i>
+								<a href="https://www.codewars.com/users/anna-tanisheva">codewars</a>
+							</div>
+						</li>
 					</ul>
-
-
-
 				</section>
 				<section id="skills" class="technologies">
 					<h2>Technologies:</h2>
@@ -110,7 +111,6 @@
 				</section>
 
 			</aside>
-
 			<section id="summary" class="content summary">
 				<h2>Summary</h2>
 				<p>My name is <span>Anna Tanisheva</span>. I live in Minsk and I’m working on a new career path.</p>
@@ -190,35 +190,6 @@
 				</div>
 			</section>
 
-
-			<section id="code" class="content code">
-				<h2>My code example (Codewars):</h2>
-				<div class="kata">
-					<a href="https://www.codewars.com/kata/546f922b54af40e1e90001da" target="_blank">Get decimal part of the
-						given number</a>
-					<p> Write a function that returns only the decimal part of the given number.
-
-						You only have to handle valid numbers, not Infinity, NaN, or similar. Always return a positive decimal
-						part.
-
-					<p>Examples:</p>
-					<p>getDecimal(2.4) === 0.4</p>
-					<p>getDecimal(-0.2) === 0.2</p>
-				</div>
-				<pre class="code-example">
-function alphabetPosition(text) {
-  function getDecimal(n){
-    let nToStr = String(n)
-    if (nToStr.indexOf('.') !== -1) {
-      let decimal = nToStr.split('.')[1]
-      return Number('0.' + decimal)
-    } else {
-      return 0;
-    }
-  }
-			</pre>
-			</section>
-
 			<section class="education-wrapper">
 
 				<div id="education" class="content education">
@@ -246,7 +217,7 @@ function alphabetPosition(text) {
 								2. This year I finished course <b>Java Script/Frontend Pre-School</b> on <a href="https://rs.school/"
 									target="_blank">rs-school</a> with the best score (first position on the score-board) out of more then 6000 students.
 									And I'm currently in the process of study JavaScript/Front-end 2022Q1.
-									
+
 							</p>
 							<a href="https://app.rs.school/certificate/oraso123" target="_blank">
 								<img src="assets/RS.JPG" alt="Certificate-RS" class="img-rs">
@@ -281,6 +252,8 @@ function alphabetPosition(text) {
 			</div>
 		</footer>
 	</div>
+
+	<script type="module" src="./index.js"></script>
 </body>
 
 </html>
